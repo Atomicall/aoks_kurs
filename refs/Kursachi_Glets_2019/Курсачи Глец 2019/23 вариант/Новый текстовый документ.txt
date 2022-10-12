@@ -1,0 +1,5 @@
+настройка ип на коммутаторе http://ftp.dlink.ru/pub/Switch/DGS-1210-28_ME/Description/DGS-1210-28_ME_Guide_HW_Installation_Guide_v2.10_RUS.pdf
+HP Color Laser 150nw принтер
+HP Scanjet Pro 2000 s1 [L2759A]
+https://www.21vek.by/switches/dgs110016me_dlink.html коммутатор
+https://www.21vek.by/routers_dslmodems/dslg225_dlink.html маршрутизатор

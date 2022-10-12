@@ -1,0 +1,114 @@
+TASK-------------------------------------------------------------
+| Room     |Area| PC | Mob|
+---------------------------
+| lab1     | 35 | 10 |  1 |
+| lab2     | 35 | 13 |  1 |
+| lab3     | 45 | 16 |  1 |
+| teachers | 45 | 10 | 15 |
+| director | 15 |  1 |  1 |
+| staff1   |  5 | -- | -- |
+| staff2   | 10 | -- | -- |
+| staff3   | 15 | -- | -- |
+
+1 server
+1 printer
+
+Internet connection 
+	VDSL2
+
+Addressing
+	90.168.1.0/29 255.255.255.248 - 6 hosts
+	10.0.10.0/24 255.255.255.0 - 254 hosts
+	IPv6 for director and teachers rooms only
+	
+Security
+	- Scheduled Internet access 
+	with event protocol for teachers and students
+	- Remote and local access to file server 
+	for teachers and students
+	- Wifi only for teachers
+
+Finances
+	UNLIMITED MONEY BOIIIIIIIIIIII $$$
+	
+Misc
+	Desktop export from teacher's PC to students.
+	
+VLANS------------------------------------------------------------
+
+
+90.168.1.0 255.255.255.248 - 6 hosts
+
+10.0.10.0/24 255.255.255.0 =
+	New mask - /27 255.255.255.224
+	10.0.10.0
+	10.0.10.32
+	10.0.10.64
+	10.0.10.96
+	10.0.10.128
+	10.0.10.160
+	10.0.10.192
+	10.0.10.224
+
+
+admin    | VLAN2  | 10.0.10.224/27
+lab1     | VLAN10 | 10.0.10.0/27
+lab2     | VLAN20 | 10.0.10.32/27
+lab3     | VLAN30 | 10.0.10.64/27
+teachers | VLAN40 | 10.0.10.96/27
+director | ------ | 10.0.10.128/27
+serber   | ------ | 90.126.1.2/29
+wifi     | ------ | 10.0.10.160/27
+VDSL2 10.0.10.192
+	
+
+Router
+https://www.cisco.com/c/en/us/support/routers/4451-x-integrated-services-router-isr/model.html
+Switch
+https://www.cisco.com/c/en/us/products/switches/catalyst-2960-l-series-switches/index.html#~stickynav=1
+Wireless
+https://www.linksys.com/us/p/P-EA6350/
+Serber : ----- DDDD
+https://www.amazon.com/Dell-Newest-PowerEdge-Server-E3-1225/dp/B0722J7NNX?psc=1&SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duckduckgo-vivaldi-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0722J7NNX
+Workstation
+https://catalog.onliner.by/desktoppc/jets/fx430d4s12is50
+iTALC
+https://континентсвободы.рф/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B-%D1%81%D0%BF%D0%BE/%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F-%D0%BF%D0%BE-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B5-%D0%B8-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B5-italc.html
+
+NAT 
+https://netclo.ru/nastroyka-dostupa-v-internet-na-marshr/
+Scheduled
+http://admindoc.ru/618/access-list-po-vremeni-timed-access-list/
+Logging
+https://community.cisco.com/t5/networking-documents/how-to-configure-logging-in-cisco-ios/ta-p/3132434
+
+TODO
+Desktop export +
+IPV6 for director +
+Printer choice - 4:30
+VDSL2
+Redo schemes - 4:54
+NAT - 5:18
+Scheduled Internet access - 5:40
+FTP serber :----DDDDD - 6:09
+Printer config - 6:19
+Wifi config - 6:32
+Literature - 6:39
+Logging - 6:46
+Hardware list - 7:24
+
+Move stuff around +
+Finish wireless setup +
+Add proper literature review +
+Add links +
+OS +
+Cable choice +
+Admin subnet +
+ip for switches +
+
+Clean and finalize
+
+-----------------------------------------------------------------
+
+
+
